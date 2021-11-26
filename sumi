@@ -1,0 +1,118 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20210602164643
+Username: LAPTOP-2LL316K7\Lenovo
+RunAs User: LAPTOP-2LL316K7\Lenovo
+Configuration Name: 
+Machine: LAPTOP-2LL316K7 (Microsoft Windows NT 10.0.19041.0)
+Host Application: C:\Windows\system32\WindowsPowerShell\v1.0\PowerShell_ISE.exe
+Process ID: 6920
+PSVersion: 5.1.19041.906
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.906
+BuildVersion: 10.0.19041.906
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\divya\sumi
+PS C:\Users\Lenovo> $PSVersionTable
+
+Name                           Value
+----                           -----
+PSVersion                      5.1.19041.906
+PSEdition                      Desktop
+PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}
+BuildVersion                   10.0.19041.906
+CLRVersion                     4.0.30319.42000
+WSManStackVersion              3.0
+PSRemotingProtocolVersion      2.3
+SerializationVersion           1.1.0.1
+
+
+PS C:\Users\Lenovo> get-date
+
+02 June 2021 17:02:05
+
+
+PS C:\Users\Lenovo> Get-TimeZone
+
+
+Id                         : India Standard Time
+DisplayName                : (UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi
+StandardName               : India Standard Time
+DaylightName               : India Daylight Time
+BaseUtcOffset              : 05:30:00
+SupportsDaylightSavingTime : False
+
+
+
+PS C:\Users\Lenovo> Get-PSDrive
+
+Name           Used (GB)     Free (GB) Provider      Root                                                                                                                                    CurrentLocation
+----           ---------     --------- --------      ----                                                                                                                                    ---------------
+Alias                                  Alias
+C                  59.77        870.49 FileSystem    C:\                                                                                                                                        Users\Lenovo
+Cert                                   Certificate   \
+Env                                    Environment
+Function                               Function
+HKCU                                   Registry      HKEY_CURRENT_USER
+HKLM                                   Registry      HKEY_LOCAL_MACHINE
+PS C:\Users\Lenovo> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\Users\Lenovo> get-location
+
+Path
+----
+C:\Users\Lenovo
+
+
+PS C:\Users\Lenovo> Start-Sleep 
+PS C:\Users\Lenovo> $d=get-date
+PS C:\Users\Lenovo> $d.AddDays(-3)
+
+30 May 2021 17:02:48
+
+
+PS C:\Users\Lenovo> New-Item -ItemType directory -Path c:\veera
+
+
+    Directory: C:\
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        02-06-2021     18:13                veera
+
+
+PS C:\Users\Lenovo> New-Item -ItemType directory -Path C:\veera\konda
+
+
+    Directory: C:\veera
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        02-06-2021     18:14                konda
+
+
+PS C:\Users\Lenovo> Add-Content -Value "this is mahesh from kodad" -Path C:\veera\konda
+Add-Content : Access to the path 'C:\veera\konda' is denied.
+At line:1 char:1
++ Add-Content -Value "this is mahesh from kodad" -Path C:\veera\konda
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (C:\veera\konda:String) [Add-Content], UnauthorizedAccessException
+    + FullyQualifiedErrorId : GetContentWriterUnauthorizedAccessError,Microsoft.PowerShell.Commands.AddContentCommand
+Add-Content : Access to the path 'C:\veera\konda' is denied.
+At line:1 char:1
++ Add-Content -Value "this is mahesh from kodad" -Path C:\veera\konda
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (C:\veera\konda:String) [Add-Content], UnauthorizedAccessException
+    + FullyQualifiedErrorId : GetContentWriterUnauthorizedAccessError,Microsoft.PowerShell.Commands.AddContentCommand
+
+**********************
+Windows PowerShell transcript end
+End time: 20210602182041
+**********************
